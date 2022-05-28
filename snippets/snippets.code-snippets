@@ -1,0 +1,25 @@
+{
+    "Discord.py Boilerplate For Cogs": {
+        "prefix": "!cogmain",
+        "body": [
+            "import discord",
+            "from discord.ext import commands",
+            "import os",
+            "",
+            "client.commands.Bot(command_prefix=commands.when_mentioned_or('${2:!}'))",
+            "",
+            "initial_extensions = []",
+            "",
+            "for filename in os.listdir('./cogs'):",
+            "    if filename.endswith('.py'):",
+            "        initial_extensions.append(filename[:-3])",
+            "",
+            "if __name__ == '__main__':",
+            "    for cog in initial_extensions:",
+            "        client.load_extension(f'cogs.{cog}')",
+            "",
+            "client.run(${1:token})",
+        ],
+        "description": "Discord.py boilerplate cogs code for main.py",
+    }
+}
