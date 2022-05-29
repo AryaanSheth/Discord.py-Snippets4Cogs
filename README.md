@@ -1,65 +1,47 @@
-# discordpyboilerplate README
+# Discord.py Snippets4Cogs README
+A simple [Discord.py](https://github.com/Rapptz/discord.py) boilerplate generator updated for 2022
 
-This is the README for your extension "discordpyboilerplate". After writing up a brief description, we recommend including the following sections.
+The extension is inspired by [discord.py Code Snippets by Wasi Master](https://marketplace.visualstudio.com/items?itemName=WasiMaster.discord-py-snippets).
+The code in the snippets is a simple and effective way to load multiple cogs for a Discord.py project.
 
-## Features
+![demo](images/example.gif)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## v1.0.2 Release
+- main.py cog management generator
+- cog.py base template code
+- setup.py (cog) ```on_ready``` code
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
+## Create Local Extension
+```git
+cd ./.vscode/extensions
+git clone https://github.com/AryaanSheth/Discord.py-Snippets4Cogs
+```
+> You will not receive live updates if you download the library locally
 ## Requirements
+```bash
+pip install discord.py
+pip install discord
+```
+## Starting A Project
+In your project root create a main.py file and type !cogmain
+create a new folder in root called ```cogs``` 
+In the folder create startup.py and type !startup
+To create a custom cog, create a new file *cogName*.py and type !cog
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Commands
+| Command  | Output                      |
+|----------|-----------------------------|
+| !cogmain | boilerplate for main.py     |
+| !startup | boilerplate for startup cog |
+| !cog     | boilerplate for general cog |
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
-
-Initial release of ...
-
+Initial release of code
 ### 1.0.1
+Added ```!cogs``` and ```!startup```
+### 1.0.2
+Fixed some some bugs when generating file
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## Source
+[Github](https://github.com/AryaanSheth/Discord.py-Snippets4Cogs)
