@@ -1,5 +1,5 @@
 {
-    "Discord.py Boilerplate For Cogs": {
+    "Discord.py Boilerplate Cog Main Code": {
         "prefix": "!cogmain",
         "body": [
             "# read the docs https://discordpy.readthedocs.io/en/stable/",
@@ -26,7 +26,7 @@
         ],
         "description": "Discord.py boilerplate cogs code for main.py",
     },
-    "Discord.py Cog Boilerplate": {
+    "Discord.py Boilerplate Cog Code": {
         "prefix": "!cog",
         "body": [
             "import discord",
@@ -64,5 +64,62 @@
         ],
         "description": "Discord.py boilerplate startup code on_ready",
     },
+    "Discord.py Boilerplate Shutdown Code": {
+        "prefix": "!shutdown",
+        "body": [
+            "import discord",
+            "from discord.ext import commands",
+            "",
+            "class shutdown(commands.Cog):",
+            "    def __init__(self, client):",
+            "        self.client = client",
+            "",
+            "    @commands.command()",
+            "    async def on_shutdown(self, ctx):",
+            "        ${1:print('Bot is shutting down!')}",
+            "",
+            "def setup(client):",
+            "    client.add_cog(shutdown(client))",
+        ],
+        "description": "Discord.py boilerplate shutdown code on_shutdown",
+    },
+    "Discord.py Boilerplate Message Code":{
+        "prefix": "!onmessage",
+        "body": [
+            "import discord",
+            "from discord.ext import commands",
+            "",
+            "class onMessage(commands.Cog):",
+            "    def __init__(self, client):",
+            "        self.client = client",
+            "",
+            "    @commands.command()",
+            "    async def on_message(self, ctx):",
+            "        ${1:print('Message received!')}",
+            "",
+            "def setup(client):",
+            "    client.add_cog(onMessage(client))",
+        ],
+        "description": "Discord.py boilerplate message code on_message",
+    },
+    "Discord.py Boilerplate Typing Code": {
+        "prefix": "!ontyping",
+        "body": [
+            "import discord",
+            "from discord.ext import commands",
+            "",
+            "class onTyping(commands.Cog):",
+            "    def __init__(self, client):",
+            "        self.client = client",
+            "",
+            "    @commands.command()",
+            "    async def on_typing(self, ctx):",
+            "        ${1:print('User is typing!')}",
+            "",
+            "def setup(client):",
+            "    client.add_cog(onTyping(client))",
+        ],
+        "description": "Discord.py boilerplate typing code on_typing",
+    }
 
 }

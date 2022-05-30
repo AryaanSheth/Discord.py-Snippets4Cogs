@@ -2,7 +2,7 @@
     "name": "discordpyboilerplate",
     "displayName": "Discord.py Boilerplate",
     "description": "Simple Discord.py Boilerplate Code",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "publisher": "aryaansheth2121",
     "icon": "images/icon.png",
     "engines": {

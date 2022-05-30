@@ -6,10 +6,8 @@ The code in the snippets is a simple and effective way to load multiple cogs for
 
 ![demo](images/example.gif)
 
-## v1.0.2 Release
-- main.py cog management generator
-- cog.py base template code
-- setup.py (cog) ```on_ready``` code
+## v1.1.0 Release
+- Added ```!shutdown```, ```!onmessage``` and, ```!ontyping``` .
 
 ## Create Local Extension
 ```git
@@ -34,6 +32,9 @@ To create a custom cog, create a new file *cogName*.py and type !cog
 | !cogmain | boilerplate for main.py     |
 | !startup | boilerplate for startup cog |
 | !cog     | boilerplate for general cog |
+| !shutdown| boilerplate for shutdown event|
+| !onmessage| boilerplate for message event|
+| !ontyping | boilerplate for typing event |
 
 ## Release Notes
 ### 1.0.0
@@ -42,6 +43,9 @@ Initial release of code
 Added ```!cogs``` and ```!startup```
 ### 1.0.2
 Fixed some some bugs when generating file
+
+### 1.1.0
+- Added ```!shutdown```, ```!onmessage``` and, ```!ontyping``` .
 
 ## Source
 [Github](https://github.com/AryaanSheth/Discord.py-Snippets4Cogs)
